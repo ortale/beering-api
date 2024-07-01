@@ -1,0 +1,19 @@
+{
+	"type": "mysql",
+	"host": "localhost",
+	"port": 3306,
+	"username": "root",
+	"password": "password",
+	"database": "db_beering",
+	"synchronize": true,
+	"logging": false,
+	"entities": [
+		"src/models/*.ts"
+	],
+	"migrations": [
+		"src/database/migrations/*.ts"
+	],
+	"subscribers": [
+		"src/subscriber/**/*.ts"
+	]
+}
